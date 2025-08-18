@@ -1,0 +1,142 @@
+import { useState, useEffect } from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Users, Target, Zap, Shield } from 'lucide-react';
+
+function AboutImageSlideshow() {
+  const [currentImage, setCurrentImage] = useState(0);
+  
+  const images = [
+    '/assets/IMG.jpg',
+    '/assets/IMG_5095.jpg',
+    '/assets/IMG_5096.jpg',
+    '/assets/IMG_5097.jpg',
+    '/assets/IMG_5098.jpg',
+    '/assets/IMG_5099.jpg',
+    '/assets/IMG_5100.jpg',
+    '/assets/IMG_5101.jpg',
+    '/assets/IMG_5102.jpg',
+    '/assets/IMG_5103.jpg',
+    '/assets/IMG_5104.jpg',
+    '/assets/IMG_5107.jpg',
+    '/assets/IMG_5108.jpg',
+    '/assets/IMG_5109.jpg'
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 2500); // Change image every 2 seconds
+    
+    return () => clearInterval(timer);
+  }, [images.length]);
+
+  return (
+    <div className="relative overflow-hidden rounded-lg shadow-xl">
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`transition-opacity duration-500 ${
+            index === currentImage ? 'opacity-100' : 'opacity-0 absolute inset-0'
+          }`}
+        >
+          <img 
+            src={image}
+            alt={`PS Oil Refinery Operations ${index + 1}`}
+            className="w-full h-96 object-cover rounded-lg"
+          />
+        </div>
+      ))}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+      
+      {/* Image Counter */}
+      <div className="absolute bottom-4 right-4 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1 text-white text-sm">
+        {currentImage + 1} / {images.length}
+      </div>
+    </div>
+  );
+}
+
+export default function AboutSection() {
+  const values = [
+    {
+      icon: <Shield className="w-8 h-8 text-blue-600" />,
+      title: "Quality Assurance",
+      description: "Stringent quality control processes ensuring premium edible oils that meet international standards."
+    },
+    {
+      icon: <Target className="w-8 h-8 text-green-600" />,
+      title: "Market Leadership",
+      description: "Established presence across 6 states with strong distribution network and brand recognition."
+    },
+    {
+      icon: <Zap className="w-8 h-8 text-yellow-600" />,
+      title: "Advanced Technology",
+      description: "State-of-the-art refinery equipment and processing technology for efficient oil production."
+    },
+    {
+      icon: <Users className="w-8 h-8 text-purple-600" />,
+      title: "Expert Team",
+      description: "Core team with 25+ years experience from top Indian oil brands bringing proven expertise."
+    }
+  ];
+
+  return (
+    <section id="about" className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">About PS Oil & Foods</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            A premier edible oil refinery company committed to delivering high-quality oils with a focus on innovation, sustainability, and customer satisfaction.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h3>
+            <div className="prose prose-lg text-gray-600 space-y-4">
+              <p>
+                Founded and led by <strong>Schin Urmalia</strong>, PS Oil & Foods Pvt. Ltd. has emerged as a significant player in the edible oil refinery industry. With our state-of-the-art refinery facility strategically located 30 km from our office headquarters, we operate on a sprawling 4-acre facility.
+              </p>
+              <p>
+                Our comprehensive infrastructure includes advanced solvent plants, modern packaging facilities, and traditional Kachhi Ghani operations, enabling us to process <strong>300 tons of premium edible oil daily</strong> - translating to an impressive 90,000 tons annually.
+              </p>
+              <p>
+                We have strategically partnered with a 100-ton packaging plant in Barampur, Odisha, enhancing our production capacity and market reach across eastern and central India.
+              </p>
+            </div>
+          </div>
+          
+          <AboutImageSlideshow />
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+  {values.map((value, index) => (
+    <Card
+      key={index}
+      className="group relative border border-gray-100 shadow-md hover:shadow-xl hover:scale-[1.03] hover:border-yellow-500/60 transition-all duration-500 ease-out overflow-hidden rounded-xl bg-white"
+    >
+      {/* Professional underline accent */}
+      <span className="absolute bottom-0 left-1/2 h-0.5 w-0 bg-yellow-500/80 rounded-full transform -translate-x-1/2 transition-all duration-500 ease-out group-hover:w-2/3"></span>
+
+      <CardContent className="p-8 text-center">
+        <div className="w-16 h-16 mx-auto mb-5 bg-yellow-50 rounded-full flex items-center justify-center transition-transform duration-500 group-hover:scale-110 group-hover:text-yellow-600">
+          {value.icon}
+        </div>
+        <h4 className="text-lg font-semibold text-gray-900 mb-2 tracking-tight">
+          {value.title}
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed">
+          {value.description}
+        </p>
+      </CardContent>
+    </Card>
+  ))}
+</div>
+
+
+
+
+      </div>
+    </section>
+  );
+}
