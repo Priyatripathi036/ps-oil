@@ -8,6 +8,8 @@ function AboutImageSlideshow() {
   const images = [
     '/assets/IMG.jpg',
     '/assets/IMG_5095.jpg',
+    '/assets/oil1.jpg',
+    '/assets/oil2.jpg',
     '/assets/IMG_5096.jpg',
     '/assets/IMG_5097.jpg',
     '/assets/IMG_5098.jpg',
@@ -95,15 +97,11 @@ export default function AboutSection() {
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h3>
             <div className="prose prose-lg text-gray-600 space-y-4">
               <p>
-                Founded and led by <strong>Schin Urmalia</strong>, PS Oil & Foods Pvt. Ltd. has emerged as a significant player in the edible oil refinery industry. With our state-of-the-art refinery facility strategically located 30 km from our office headquarters, we operate on a sprawling 4-acre facility.
+              "Founded under the leadership of Sachin Urmalia, PS Oil & Foods Pvt. Ltd. is envisioned to become a trusted name in the edible oil industry. We are building a modern refinery facility on a 4-acre site, designed to bring together advanced technology and traditional practices like Kachhi Ghani operations. 
               </p>
-              <p>
-                Our comprehensive infrastructure includes advanced solvent plants, modern packaging facilities, and traditional Kachhi Ghani operations, enabling us to process <strong>300 tons of premium edible oil daily</strong> - translating to an impressive 90,000 tons annually.
-              </p>
-              <p>
-                We have strategically partnered with a 100-ton packaging plant in Barampur, Odisha, enhancing our production capacity and market reach across eastern and central India.
-              </p>
-            </div>
+              <p>Our aim is not just scale — with a planned capacity of 300 tons of premium oils daily — but also quality, ensuring that every drop meets the highest standards of purity, taste, and nutrition. Through strategic partnerships, including expansion into Odisha, we are preparing to serve families and communities across eastern and central India with oils that inspire confidence and care.”
+        </p>
+        </div>
           </div>
           
           <AboutImageSlideshow />

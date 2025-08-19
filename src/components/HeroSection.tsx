@@ -6,7 +6,11 @@ export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
+    '/assets/oil1.jpg',
+    '/assets/oil2.jpg',
     '/assets/IMG.jpg',
+    '/assets/oil1.jpg',
+    '/assets/oil2.jpg',
     '/assets/IMG_5095.jpg',
     '/assets/IMG_5096.jpg',
     '/assets/IMG_5097.jpg',
@@ -25,7 +29,7 @@ export default function HeroSection() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 7000); // Slower, professional pace
+    }, 5000); // Slower, professional pace
     return () => clearInterval(timer);
   }, [slides.length]);
 

@@ -9,7 +9,8 @@ export default function DistributionSection() {
     { name: "Chhattisgarh", hubs: 4, distributors: 15, status: "Established" },
     { name: "Bihar", hubs: 6, distributors: 22, status: "Key Market" },
     { name: "West Bengal", hubs: 7, distributors: 28, status: "Strategic Market" },
-    { name: "Madhya Pradesh", hubs: 5, distributors: 20, status: "Expanding" }
+    { name: "Madhya Pradesh", hubs: 5, distributors: 20, status: "Expanding" },
+    { name: "Maharashtra", hubs: 6, distributors: 18, status: "Strategic Market" }
   ];
 
   const networkTypes = [
@@ -118,7 +119,7 @@ export default function DistributionSection() {
                 <div className="w-16 h-16 mx-auto mb-3 bg-blue-100 rounded-full flex items-center justify-center">
                   <MapPin className="w-8 h-8 text-blue-600" />
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900">6 States</h4>
+                <h4 className="text-lg font-semibold text-gray-900">7+ States</h4>
                 <p className="text-gray-600">Market Presence</p>
               </div>
               <div className="text-center">

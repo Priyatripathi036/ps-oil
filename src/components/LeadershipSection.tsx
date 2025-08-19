@@ -64,20 +64,17 @@ export default function LeadershipSection() {
               
               <div className="prose prose-lg text-gray-600 space-y-4">
                 <p>
-                  <strong>Schin Urmalia</strong> brings over 25 years of extensive experience in the edible oil industry, having worked with top Indian oil brands and successfully built distribution networks across multiple states.
+                Guided by Sachin Urmalia, PS Oil & Foods draws from deep industry expertise and a vision rooted in trust, innovation, and customer well-being. His experience in building strong distribution networks and understanding market needs provides the foundation for a company focused on both growth and responsibility. 
                 </p>
                 <p>
-                  His visionary leadership and deep industry knowledge have been instrumental in establishing PS Oil & Foods as a trusted name in the edible oil refinery sector, with a focus on quality, innovation, and sustainable growth.
-                </p>
-                <p>
-                  Under his guidance, the company has achieved remarkable milestones in production capacity, market penetration, and operational excellence.
-                </p>
+                With his leadership, we are shaping PS Oil & Foods into a brand that resonates equally with investors seeking sustainability and customers looking for quality they can rely on every day.
+             </p>
               </div>
             </div>
             
             <div className="relative">
               <img 
-               src="/assets/face.JPG" 
+               src="/assets/face.jpg" 
                 alt="Professional leadership" 
                 className="rounded-lg shadow-lg"
               />

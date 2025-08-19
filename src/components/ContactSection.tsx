@@ -9,7 +9,7 @@ export default function ContactSection() {
     {
       icon: <Phone className="w-6 h-6 text-blue-600" />,
       title: "Phone Numbers",
-      details: ["+91 9893708055", "+91 9111708055"],
+      details: ["+91 9893708055", "+91 9111708055" , "+91 8109109111"],
       description: "Available during business hours"
     },
     {
