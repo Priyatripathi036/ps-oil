@@ -74,7 +74,7 @@ export default function LeadershipSection() {
             
             <div className="relative">
               <img 
-               src="/assets/face.jpg" 
+               src="/assets/face.JPG" 
                 alt="Professional leadership" 
                 className="rounded-lg shadow-lg"
               />
