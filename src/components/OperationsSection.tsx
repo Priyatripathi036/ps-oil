@@ -40,7 +40,7 @@ export default function OperationsSection() {
 
   const productionStats = [
     { label: "Daily Capacity", value: 300, unit: "Tons", progress: 100 },
-    { label: "Annual Production", value: 90000, unit: "Tons", progress: 100 },
+    { label: "Annual Production", value: 109500, unit: "Tons", progress: 100 },
     { label: "Processing Efficiency", value: 98, unit: "%", progress: 98 },
     { label: "Quality Standards", value: 100, unit: "%", progress: 100 }
   ];

@@ -9,7 +9,7 @@ export default function ContactSection() {
     {
       icon: <Phone className="w-6 h-6 text-blue-600" />,
       title: "Phone Numbers",
-      details: ["+91 9893708055", "+91 9111708055" , "+91 8109109111"],
+      details: ["+91 9893708055", "+91 9111708055" , "+91 8109109111" ,"0761-3383330"],
       description: "Available during business hours"
     },
     {
@@ -20,8 +20,8 @@ export default function ContactSection() {
     },
     {
       icon: <MapPin className="w-6 h-6 text-red-600" />,
-      title: "Location",
-      details: ["Refinery: 30 km from Office HQ", "Packaging Plant: Barampur, Odisha"],
+      title: "Office Location",
+      details: ["Block A, Avatar Complex, Gorakhpur, Jabalpur, M.P."],
       description: "Strategic locations for operations"
     },
     {
@@ -83,7 +83,7 @@ export default function ContactSection() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <p className="text-gray-700">Extensive 6-state distribution network</p>
+                  <p className="text-gray-700">Extensive 28-state distribution network</p>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-purple-500 rounded-full"></div>

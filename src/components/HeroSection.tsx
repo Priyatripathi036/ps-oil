@@ -6,24 +6,41 @@ export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
+    '/assets/oil13.mp4',
+    '/assets/oil8.mp4',
+    '/assets/oil11.mp4',
+    '/assets/oil6.jpg',
+    '/assets/oil5.mp4',
+    // '/assets/oil7.jpg',
+    '/assets/oil9.mp4',
+    '/assets/oil12.mp4',
     '/assets/oil1.jpg',
     '/assets/oil2.jpg',
+    '/assets/oil15.mp4',
+    '/assets/oil13.mp4',
+    '/assets/oil4.mp4',
+    '/assets/oil11.mp4',
+    '/assets/oil12.mp4',
     '/assets/IMG.jpg',
     '/assets/oil1.jpg',
-    '/assets/oil2.jpg',
-    '/assets/IMG_5095.jpg',
-    '/assets/IMG_5096.jpg',
-    '/assets/IMG_5097.jpg',
-    '/assets/IMG_5098.jpg',
-    '/assets/IMG_5099.jpg',
-    '/assets/IMG_5100.jpg',
-    '/assets/IMG_5101.jpg',
-    '/assets/IMG_5102.jpg',
-    '/assets/IMG_5103.jpg',
-    '/assets/IMG_5104.jpg',
-    '/assets/IMG_5107.jpg',
-    '/assets/IMG_5108.jpg',
-    '/assets/IMG_5109.jpg'
+    '/assets/oil7.jpg',
+    '/assets/oil8.mp4',
+    '/assets/oil9.mp4',
+    '/assets/oil10.mp4',
+    // '/assets/IMG_5095.jpg',
+    // '/assets/IMG_5096.jpg',
+    // '/assets/IMG_5097.jpg',
+    // '/assets/IMG_5098.jpg',
+    // '/assets/IMG_5099.jpg',
+    // '/assets/IMG_5100.jpg',
+    // '/assets/IMG_5101.jpg',
+    // '/assets/IMG_5102.jpg',
+    // '/assets/IMG_5103.jpg',
+    // '/assets/IMG_5104.jpg',
+    // '/assets/IMG_5107.jpg',
+    // '/assets/IMG_5108.jpg',
+    // '/assets/IMG_5109.jpg'
+
   ];
 
   useEffect(() => {
@@ -44,11 +61,27 @@ export default function HeroSection() {
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            <img
+             {slide.endsWith('.mp4') ? (
+              <video
+                src={slide}
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+            ) : (
+              <img
+                src={slide}
+                alt={`PS Oil Refinery ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
+            )}
+            {/* <img
               src={slide}
               alt={`PS Oil Refinery ${index + 1}`}
               className="w-full h-full object-cover"
-            />
+            /> */}
             {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 via-gray-900/40 to-gray-900/60"></div>
           </div>

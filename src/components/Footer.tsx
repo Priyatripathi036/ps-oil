@@ -33,7 +33,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Leading edible oil refinery with 300 tons daily capacity, serving premium quality oils across 6 states with 25+ years of industry expertise.
+            Delivering Premium Quality Oils, PAN India – Backed by 25+ Years of Trust.
             </p>
             <div className="flex items-center space-x-3 mb-3">
               <Factory className="w-5 h-5 text-yellow-500" />
@@ -100,6 +100,8 @@ export default function Footer() {
                 <div>
                   <p className="text-gray-300">+91 9893708055</p>
                   <p className="text-gray-300">+91 9111708055</p>
+                  <p className="text-gray-300">+91 8109109111</p>
+                  <p className="text-gray-300">0761-3583330</p>
                 </div>
               </div>
               
@@ -130,7 +132,7 @@ export default function Footer() {
           </div>
           
           <div className="text-gray-400 text-sm">
-            <p>Founded by <span className="text-yellow-400 font-semibold">Schin Urmalia</span> | Industry Leader since 1999</p>
+            <p>Founded by <span className="text-yellow-400 font-semibold">Sachin Urmalia</span> | Industry Leader </p>
           </div>
         </div>
 
@@ -139,11 +141,11 @@ export default function Footer() {
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
               <h5 className="text-yellow-400 font-semibold mb-2">Distribution Network</h5>
-              <p className="text-gray-300 text-sm">6 States • 128+ Distributors • 37+ Hubs</p>
+              <p className="text-gray-300 text-sm">28 States • 560+ Distributors • 80+ Hubs</p>
             </div>
             <div>
               <h5 className="text-yellow-400 font-semibold mb-2">Production Capacity</h5>
-              <p className="text-gray-300 text-sm">300 Tons/Day • 90,000 Tons/Year</p>
+              <p className="text-gray-300 text-sm">300 Tons/Day • 1,09,500 Tons/Year</p>
             </div>
             <div>
               <h5 className="text-yellow-400 font-semibold mb-2">Quality Assurance</h5>

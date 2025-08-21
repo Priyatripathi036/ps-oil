@@ -32,6 +32,12 @@ export default function ProductsSection() {
       image: "/images/SoyaOil.jpg",
       description: "Refined soybean oil rich in omega-3 fatty acids and essential nutrients for healthy living.",
       features: ["Omega-3 Rich", "Nutritious", "Mild Flavor", "All-Purpose Oil"]
+    },
+    {
+      name: "Groundnut Oil",
+      image: "/images/groundnutOil.webp",
+      description: "Cold-pressed groundnut oil with rich nutty flavor, loaded with healthy fats and ideal for frying and traditional recipes.",
+      features: ["Rich Nutty Flavor", "High Smoke Point", "Cold Pressed", "Nutrient Rich"]
     }
   ];
 
@@ -47,20 +53,30 @@ export default function ProductsSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow">
+            <Card
+              key={index}
+              className="overflow-hidden border border-gray-200 rounded-xl shadow-md 
+              hover:shadow-2xl hover:scale-[1.03] hover:border-yellow-400/70 
+              transition-all duration-500 ease-out group"
+            >
+              {/* Image Section */}
               <div className="relative h-48 overflow-hidden">
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               </div>
               
+              {/* Product Title */}
               <CardHeader className="pb-3">
-                <CardTitle className="text-xl text-gray-900">{product.name}</CardTitle>
+                <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-yellow-600 transition-colors duration-300">
+                  {product.name}
+                </CardTitle>
               </CardHeader>
               
+              {/* Description + Features */}
               <CardContent className="pt-0">
                 <p className="text-gray-600 mb-4">{product.description}</p>
                 
@@ -69,7 +85,7 @@ export default function ProductsSection() {
                     <Badge 
                       key={idx} 
                       variant="secondary" 
-                      className="bg-yellow-100 text-yellow-800 hover:bg-yellow-200"
+                      className="bg-yellow-100 text-yellow-800 hover:bg-yellow-200 transition-colors duration-300"
                     >
                       {feature}
                     </Badge>
@@ -80,7 +96,8 @@ export default function ProductsSection() {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-yellow-50 to-amber-50 rounded-2xl p-8">
+        {/* Bottom Quality Section */}
+        <div className="mt-16 bg-gradient-to-r from-yellow-50 to-amber-50 rounded-2xl p-8 hover:shadow-lg hover:scale-[1.01] transition-all duration-500">
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Quality Guarantee</h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
