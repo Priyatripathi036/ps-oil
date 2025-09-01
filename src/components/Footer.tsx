@@ -25,10 +25,10 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">PS</span>
+                <span className="text-white font-bold text-xl">P&S</span>
               </div>
               <div className="ml-3">
-                <h3 className="text-xl font-bold">PS Oil & Foods</h3>
+                <h3 className="text-xl font-bold">P&S Oil Refinery</h3>
                 <p className="text-gray-400">Pvt. Ltd.</p>
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 mb-4 md:mb-0">
-            <p>&copy; 2025 PS Oil & Foods Pvt. Ltd. All rights reserved.</p>
+            <p>&copy; 2025 P&S Oil Refinery Pvt. Ltd. All rights reserved.</p>
           </div>
           
           <div className="text-gray-400 text-sm">

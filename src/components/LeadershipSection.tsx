@@ -56,7 +56,7 @@ export default function LeadershipSection() {
                   <span className="text-white font-bold text-2xl">SU</span>
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-gray-900">Schin Urmalia</h3>
+                  <h3 className="text-3xl font-bold text-gray-900">Sachin Urmalia</h3>
                   <p className="text-xl text-gray-600">Founder & Director</p>
                   <Badge className="bg-yellow-100 text-yellow-800 mt-2">Industry Leader</Badge>
                 </div>
@@ -64,10 +64,10 @@ export default function LeadershipSection() {
               
               <div className="prose prose-lg text-gray-600 space-y-4">
                 <p>
-                Guided by Sachin Urmalia, PS Oil & Foods draws from deep industry expertise and a vision rooted in trust, innovation, and customer well-being. His experience in building strong distribution networks and understanding market needs provides the foundation for a company focused on both growth and responsibility. 
+                Guided by Sachin Urmalia, P&S Oil Refinery draws from deep industry expertise and a vision rooted in trust, innovation, and customer well-being. His experience in building strong distribution networks and understanding market needs provides the foundation for a company focused on both growth and responsibility. 
                 </p>
                 <p>
-                With his leadership, we are shaping PS Oil & Foods into a brand that resonates equally with investors seeking sustainability and customers looking for quality they can rely on every day.
+                With his leadership, we are shaping P&S Oil Refinery into a brand that resonates equally with investors seeking sustainability and customers looking for quality they can rely on every day.
              </p>
               </div>
             </div>

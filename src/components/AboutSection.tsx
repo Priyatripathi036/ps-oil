@@ -100,7 +100,7 @@ export default function AboutSection() {
     <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">About PS Oil & Foods</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">About P&S Oil Refinery</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A premier edible oil refinery company committed to delivering high-quality oils with a focus on innovation, sustainability, and customer satisfaction.
           </p>
@@ -111,7 +111,7 @@ export default function AboutSection() {
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h3>
             <div className="prose prose-lg text-gray-600 space-y-4">
               <p>
-                "Founded under the leadership of Sachin Urmalia, PS Oil & Foods Pvt. Ltd. is envisioned to become a trusted name in the edible oil industry. We are building a modern refinery facility on a 4-acre site, designed to bring together advanced technology and traditional practices like Kachhi Ghani operations. 
+                "Founded under the leadership of Sachin Urmalia, P&S Oil Refinery Pvt. Ltd. is envisioned to become a trusted name in the edible oil industry. We are building a modern refinery facility on a 4-acre site, designed to bring together advanced technology and traditional practices like Kachhi Ghani operations. 
               </p>
               <p>
                 Our aim is not just scale — with a planned capacity of 300 tons of premium oils daily — but also quality, ensuring that every drop meets the highest standards of purity, taste, and nutrition. Through strategic partnerships, including expansion into Odisha, we are preparing to serve families and communities across eastern and central India with oils that inspire confidence and care.

@@ -22,10 +22,10 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">PS</span>
+              <span className="text-white font-bold text-xl">P&S</span>
             </div>
             <div className="ml-3">
-              <h1 className="text-xl font-bold text-gray-900">PS Oil & Foods</h1>
+              <h1 className="text-xl font-bold text-gray-900">P&S Oil Refinery</h1>
               <p className="text-sm text-gray-600">Pvt. Ltd.</p>
             </div>
           </div>
