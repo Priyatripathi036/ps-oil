@@ -11,7 +11,7 @@ export default function ProductsSection() {
     },
     {
       name: "Palm Oil",
-      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3",
+      image: "/images/palmOil.jpg",
       description: "Refined palm oil ideal for deep frying and commercial food preparation with excellent stability.",
       features: ["High Stability", "Deep Frying", "Commercial Grade", "Cost Effective"]
     },
@@ -23,7 +23,7 @@ export default function ProductsSection() {
     },
     {
       name: "Mustard Oil",
-      image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-4.0.3",
+      image: "/images/mustard oil.webp",
       description: "Traditional mustard oil with authentic flavor, perfect for regional cuisines and health benefits.",
       features: ["Traditional Taste", "Antimicrobial", "Regional Favorite", "Therapeutic Properties"]
     },
@@ -60,13 +60,12 @@ export default function ProductsSection() {
               transition-all duration-500 ease-out group"
             >
               {/* Image Section */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative w-full h-60 flex items-center justify-center bg-white">
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               </div>
               
               {/* Product Title */}
@@ -109,3 +108,4 @@ export default function ProductsSection() {
     </section>
   );
 }
+
